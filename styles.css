@@ -1,0 +1,455 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('https://lonelyplanetes.cdnstatics2.com/sites/default/files/styles/max_1300x1300/public/fotos/japon_tokio_montefuji_shutterstock_756354574_sean_pavone_shutterstock.jpg?itok=3nrPOQvT'); /* Default background image */
+    transition: background-image 1s ease-in-out;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 4rem;
+}
+
+.hero-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 2;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-controls button {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-controls .active {
+    background-color: #fff;
+    color: #000;
+}
+
+.tours {
+    text-align: center;
+    padding: 2rem 0;
+    background-image: url('https://img.freepik.com/fotos-premium/cielo-nocturno-estrellado-cielo-estrellado-cielo-estrellado_839169-1644.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.tours::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0.5), rgba(0, 0, 0, 0.1));
+    z-index: 1;
+}
+
+.tours h2 {
+    font-size: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.tour-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.tour-card {
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.tour-card img {
+    width: 100%;
+    height: auto;
+}
+
+.inspiration {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.inspiration h2 {
+    font-size: 2rem;
+}
+
+.inspiration button {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+.video-thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.video-thumbnails img {
+    width: 30%;
+    margin: 0 1rem;
+}
+
+/*services*/
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.service {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.service i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    background-color: #333333;
+}
+
+/*team*/
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+    padding: 40px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.team-member {
+    width: 30%;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.team-member img {
+    width: 100x;
+    height: 150px;
+    border-radius: 30%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #de197a; /* Color deeprose */
+}
+
+.team-member p {
+    font-size: 16px;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+/*form*/
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.contact-form {
+    background-color: #282828;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #e60012;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Sawarabi Mincho', serif;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.contact-form button {
+    background-color: #e60012;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #ff1a2d;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #e60012;
+    outline: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+
+
+/*footer*/
+
+.footer {
+    background-color: #000000;
+    color: #f0f0f0;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    color: #e60012;
+    margin-bottom: 20px;
+    font-family: 'Sawarabi Mincho', serif;
+}
+
+.footer-section p, .footer-section a {
+    color: #f0f0f0;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #ff1a2d;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+.footer-section .social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-section .social i {
+    font-size: 24px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .tour-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tour-card {
+        width: 80%;
+        max-width: none;
+    }
+
+    .video-thumbnails img {
+        width: 45%;
+    }
+
+    .services, .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service, .team-member {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .tour-cards, .video-thumbnails, .services, .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tour-card, .service, .team-member {
+        width: 90%;
+    }
+
+    .video-thumbnails img {
+        width: 90%;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-controls button {
+        padding: 0.5rem;
+        margin: 0.2rem;
+    }
+
+    .contact-form {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .contact-form h2 {
+        font-size: 24px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+
+    .contact-form button {
+        padding: 8px 16px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        min-width: 100%;
+        padding: 10px;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+    }
+}
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');

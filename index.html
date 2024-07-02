@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h1 id="hero-title">Visit Tokyo</h1>
+                <hr color="red" width="50%">
+                <p id="hero-text">Discover the beauty and culture of Tokyo with our exclusive tours.</p>
+            </div>
+            <div class="hero-controls">
+                <button onclick="changeHero(0)" class="active">01</button>
+                <button onclick="changeHero(1)">02</button>
+                <button onclick="changeHero(2)">03</button>
+                <button onclick="changeHero(3)">04</button>
+                <button onclick="changeHero(4)">05</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="tours">
+        <h2>Visit</h2>
+        <div class="tour-cards">
+            <div class="tour-card">
+                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/04/10/13/tokyo-main.jpg" alt="Тур №1">
+                <h3>Тур №1</h3>
+                <p>Y ponte en contacto con nosotros sin previo aviso.</p>
+            </div>
+            <div class="tour-card">
+                <img src="http://www.wanderluluu.com/wp-content/uploads/2020/06/130423_09119_023_LMP.jpg" alt="Тур №2">
+                <h3>Тур №2</h3>
+                <p>Y ponte en contacto con nosotros sin previo aviso.</p>
+            </div>
+            <div class="tour-card">
+                <img src="https://lp-cms-production.imgix.net/2021-05/GettyRF_1088228476.jpg?auto=format&w=1440&h=810&fit=crop&q=75" alt="Тур №3">
+                <h3>Тур №3</h3>
+                <p>Y ponte en contacto con nosotros sin previo aviso.</p>
+            </div>
+            <div class="tour-card">
+                <img src="https://jw-webmagazine.com/wp-content/uploads/2019/06/jw-5d15b15f819a00.32860161.jpeg" alt="Тур №4">
+                <h3>Тур №4</h3>
+                <p>Y ponte en contacto con nosotros sin previo aviso.</p>
+            </div>
+        </div>
+    
+
+    <section class="inspiration">
+        <h2>Travel and Inspire Your Life</h2>
+        <button>ver</button>
+        <div class="video-thumbnails">
+            <video width="440" height="260" controls>
+                
+            </video>
+        </div>
+    </section>
+
+    </section>
+
+    <!--services-->
+
+    <section class="services">
+        <div class="service">
+            <i class="fas fa-plane"></i>
+            <h3>Vuelos</h3>
+            <p>Encuentra los mejores vuelos a tu destino.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-hotel"></i>
+            <h3>Hoteles</h3>
+            <p>Reserva hoteles con las mejores ofertas.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-map-marked-alt"></i>
+            <h3>Tours</h3>
+            <p>Explora los mejores tours y actividades.</p>
+        </div>
+    </section>
+
+    <!--team-->
+
+    <section class="team">
+        <div class="team-member">
+            <img src="https://www.pngmart.com/files/15/Professional-Business-Woman-PNG-File.png" alt="Nombre Miembro 1">
+            <h3>Nombre Miembro 1</h3>
+            <p>Descripción breve del miembro 1.</p>
+        </div>
+        <div class="team-member">
+            <img src="https://www.pngmart.com/files/15/Business-Woman-PNG-Photos.png" alt="Nombre Miembro 2">
+            <h3>Nombre Miembro 2</h3>
+            <p>Descripción breve del miembro 2.</p>
+        </div>
+        <div class="team-member">
+            <img src="http://www.coachingpro.es/wp-content/uploads/2017/01/lideres-grc-2.png" alt="Nombre Miembro 3">
+            <h3>Nombre Miembro 3</h3>
+            <p>Descripción breve del miembro 3.</p>
+        </div>
+    </section>
+    
+    <!--form-->
+
+    <section class="contact-form">
+        <h2>Contáctanos</h2>
+        <form>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Sobre Nosotros</h3>
+                <p>Somos una empresa dedicada a brindar experiencias únicas de viajes y turismo. Nuestra misión es hacer que tus sueños de viaje se hagan realidad.</p>
+            </div>
+            <div class="footer-section social">
+                <h3>Redes Sociales</h3>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+            <div class="footer-section contact">
+                <h3>Dirección</h3>
+                <p>123 Calle Principal, Ciudad, País</p>
+                <p>Teléfono: +123 456 7890</p>
+                <p>Email: contacto@empresa.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Tu Empresa. Todos los derechos reservados.
+        </div>
+    </footer>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
